@@ -1,0 +1,50 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+    "^dewu-(.*)": "@/components/dewu/dewu-$1.vue"
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/home/index",
+      "style": {}
+    },
+    {
+      "path": "pages/shop/index",
+      "style": {}
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {}
+    }
+  ],
+  "tabBar": {
+    "backgroundColor": "#ffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "得物",
+        "iconPath": "static/icons/du.png",
+        "selectedIconPath": "static/icons/du-activate.png"
+      },
+      {
+        "pagePath": "pages/shop/index",
+        "text": "购买",
+        "iconPath": "static/icons/shop.png",
+        "selectedIconPath": "static/icons/shop-activate.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/icons/mine.png",
+        "selectedIconPath": "static/icons/mine-activate.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}
